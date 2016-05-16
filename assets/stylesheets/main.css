@@ -325,5 +325,54 @@ h1 {
 
 .box3 li:before {
   content: "* ";
-  color: red; /* or whatever color you prefer */
+  color: red;
+}
+
+/* FOOTER */
+
+footer {
+  font-family: arial, sans-serif;
+}
+
+.footer-top {
+  width: 100%;
+  height: 280px;
+  background-color: #F6F6F6;
+}
+
+.name {
+  color: #555555;
+  font-size: 0.9em;
+  letter-spacing: -0.2px;
+  padding: 45px 10px 5px 10px;
+  margin: 0 46%;
+}
+
+.message {
+  font-weight: 900;
+  font-size: 3.5em;
+  color: red;
+  text-align: center;
+}
+
+.btn-share {
+  border: 2px solid rgba(0,0,0,.1);
+  font-weight: normal;
+  font-size: 0.95em;
+  border-radius: 3px;
+  color: #AAAAAA;
+  display: inline-block;
+  padding: 6px 17px;
+  margin: 25px 47%;
+}
+
+.footer-bottom {
+  background-color: #000000;
+  padding: 30px 2px;
+  text-align: center;
+}
+
+.credits {
+  color: #AAAAAA;
+  font-size: 0.85em;
 }
