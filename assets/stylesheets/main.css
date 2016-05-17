@@ -121,9 +121,14 @@ header .right {
   font-size: 110%;
 }
 
+.logo {
+  display: none;
+}
+
 .social {
   float: right;
-  width: 15%;
+  width: 20%;
+  text-align: right;
 }
 
 .social .img-item {
@@ -135,7 +140,7 @@ header .right {
 }
 
 .social .img-item:last-of-type {
-  padding: 0px 10px;
+  display: none;
 }
 
 .top-menu a:hover {
@@ -383,17 +388,37 @@ footer {
 
 @media screen and (max-width: 767px) {
   /***** header *****/
-  .top-nav-1, .top-nav-2 {
-    height: 70px;
+  .top-nav-1 {
+    display: none;
   }
 
   .top-menu {
-    width: 65%;
-    font-size: 1em;
+    display: none;
   }
 
   .social {
-    width: 30%;
+    width: 120px;
+  }
+  
+  .logo {
+    display: block;
+    float: left;
+  }
+  
+  .social .img-item:nth-child(-n+3) {
+    display: none;   
+  }
+  
+  .social .img-item:last-of-type {
+    display: block;
+  } 
+  
+  .social .img-item {
+    padding: 0 15px 0 5px;
+    display: block;
+    width: 50px;
+    float: left;
+    border-left: 1px solid #CCCCCC;
   }
   /***** main section *****/
   .first, .second, .third, .fourth {
