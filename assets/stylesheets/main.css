@@ -351,7 +351,7 @@ footer {
 .message {
   font-weight: 900;
   font-size: 3.5em;
-  color: red;
+  color: #FF4422;
   text-align: center;
 }
 
@@ -375,4 +375,145 @@ footer {
 .credits {
   color: #AAAAAA;
   font-size: 0.85em;
+}
+
+/* MEDIA QUERIES */
+
+/* UP TO 767px */
+
+@media screen and (max-width: 767px) {
+  /***** header *****/
+  .top-nav-1, .top-nav-2 {
+    height: 70px;
+  }
+
+  .top-menu {
+    width: 65%;
+    font-size: 1em;
+  }
+
+  .social {
+    width: 30%;
+  }
+  /***** main section *****/
+  .first, .second, .third, .fourth {
+    width: 97%;
+    height: 185px;
+    float: none;
+  }
+  
+  .first .one, .second .one, .third .one, .fourth .one {
+    font-size: 1.6em;
+  }
+  /***** latest news *****/
+  #latest {
+    margin: 25px 30px 15px 15px;
+  }
+  .news {
+    width: 98%;
+    height: 88px;
+    float: left;
+  }
+
+  .img-news {
+    float: left;
+    width: 73px;
+    height: 73px;
+    border: 1px solid black;
+    position: relative;
+  }
+  
+  .img-news img {
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 72px;
+    height: 72px;
+  }
+  
+  .news-title, .author {
+    width: 80%;
+    float: right;
+  }
+  /***** categories *****/
+  #categories {
+    margin: 25px 10px 15px 10px;
+  }
+  
+  .category {
+    width: 98%;
+    padding: 10px 10px 25px 10px;
+    float: none;
+  }
+  /***** footer *****/
+  .footer-top {
+    height: 160px;
+  }
+  
+  .message {
+    font-size: 1.5em;
+    letter-spacing: -0.5px;
+  }
+}
+
+/* FROM 768px TO 1023px */
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /***** header *****/
+  .top-nav-2 {
+    height: 70px;
+  }
+
+  .top-menu {
+    width: 70%;
+    font-size: 0.9em;
+  }
+
+  .social {
+    width: 25%;
+  }
+  /***** main section *****/
+  .first {
+    width: 98%;
+    height: 213px;
+    float: left;
+  }
+  
+  .second, .third, .fourth {
+    width: 32%;
+    height: 140px;
+    float: left;
+  }
+  
+  .second .one, .third .one, .fourth .one {
+    font-size: 1.2em;
+  }
+  /***** latest news *****/
+  #latest {
+    margin: 25px 15px 15px 20px;
+  }
+  .news {
+    width: 30%;
+    height: 225px;
+    float: left;
+  }
+  /***** categories *****/
+  #categories {
+    margin: 25px 10px 15px 10px;
+  }
+  
+  .category {
+    width: 48%;
+    padding: 10px 10px 25px 10px;
+    float: left;
+  }
+  /***** footer *****/
+  .footer-top {
+    height: 220px;
+  }
+  
+  .message {
+    font-size: 2em;
+    letter-spacing: -0.5px;
+  }
 }
